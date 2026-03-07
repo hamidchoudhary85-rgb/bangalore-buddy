@@ -26,8 +26,12 @@ const Index = () => {
       <Header onContactClick={() => setContactOpen(true)} />
 
       {/* Hero */}
-      <section className="relative overflow-hidden py-16 text-center" style={{ background: "var(--hero-gradient)" }}>
-        <div className="container mx-auto px-4">
+      <section
+        className="relative overflow-hidden py-20 text-center bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      >
+        <div className="absolute inset-0 bg-primary/70 backdrop-blur-[2px]" />
+        <div className="container relative mx-auto px-4">
           <h1 className="mb-3 text-4xl font-bold text-primary-foreground md:text-5xl">
             Find Your Perfect Home in Bangalore
           </h1>
