@@ -4,6 +4,7 @@ import SearchBar from "@/components/SearchBar";
 import AreaCard from "@/components/AreaCard";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import { AreaSlider } from "@/components/AreaSlider";
 import { areas } from "@/data/areas";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -42,9 +43,17 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Slider Section */}
+      <section className="container mx-auto px-4 py-8">
+        <h2 className="mb-8 text-center text-3xl font-bold text-foreground">
+          Explore Popular Areas
+        </h2>
+        <AreaSlider />
+      </section>
+
       {/* Area Cards */}
-      <section className="container mx-auto px-4 py-12">
-        <h2 className="mb-8 text-center text-2xl font-bold text-foreground">
+      <section className="container mx-auto px-4 py-12 bg-secondary/30 rounded-3xl mb-12">
+        <h2 className="mb-8 text-center text-3xl font-bold text-foreground">
           Top IT Areas Comparison
         </h2>
         <div className="grid gap-6 md:grid-cols-2">
