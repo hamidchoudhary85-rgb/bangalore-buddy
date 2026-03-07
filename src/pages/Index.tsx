@@ -54,6 +54,7 @@ const Index = () => {
         </div>
       </section>
 
+      <Footer />
       <ContactForm open={contactOpen} onOpenChange={setContactOpen} />
     </div>
   );
