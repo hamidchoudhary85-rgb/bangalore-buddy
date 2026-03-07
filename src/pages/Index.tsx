@@ -3,7 +3,9 @@ import Header from "@/components/Header";
 import SearchBar from "@/components/SearchBar";
 import AreaCard from "@/components/AreaCard";
 import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/Footer";
 import { areas } from "@/data/areas";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
   const [search, setSearch] = useState("");
